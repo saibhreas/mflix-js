@@ -55,6 +55,7 @@ export default class MoviesDAO {
     */
 
     let cursor
+
     try {
       // TODO Ticket: Projection
       // Find movies matching the "countries" list, but only return the title
@@ -296,9 +297,9 @@ export default class MoviesDAO {
       const pipeline = [
         {
           $match: {
-            _id: ObjectId(id)
-          }
-        }
+            _id: ObjectId(id),
+          },
+        },
       ]
       return await movies.aggregate(pipeline).next()
     } catch (e) {
