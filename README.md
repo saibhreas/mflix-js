@@ -15,3 +15,9 @@ Each ticket will contain the exact command to run that ticket's specific unit te
 npm test -t db-connection
 
 npm test -t projection
+
+
+### Install
+
+Installed MongoDB shell extension.
+Also tempraily terminting this version of the certification.  kept running into errors.  Needed to restart, and new version is up @ mondoDB university.  It ustilizes a differnt database.   so fart not using an external server to connect.
